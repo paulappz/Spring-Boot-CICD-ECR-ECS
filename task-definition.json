@@ -1,22 +1,17 @@
 {
-  "executionRoleArn": "arn:aws:iam::497654570788:role/ecsTaskExecutionRole",
+  "ipcMode": null,
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
-      "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/ec2-task",
-                    "awslogs-region": "ap-south-1",
-                    "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": null
-      },
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": null,
       "entryPoint": null,
       "portMappings": [
         {
           "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 9090
+          "containerPort": 80
         }
       ],
       "command": null,
@@ -30,11 +25,11 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": 500,
+      "memory": null,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "497654570788.dkr.ecr.ap-south-1.amazonaws.com/learn:latest",
+      "image": "710438132165.dkr.ecr.us-east-1.amazonaws.com/java-spring-boot-ecs:latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -51,17 +46,36 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "learn"
+      "name": "JavaSpringbootContainer"
     }
   ],
   "placementConstraints": [],
-  "memory": "500",
-  "taskRoleArn": "arn:aws:iam::497654570788:role/ecsTaskExecutionRole",
-  "family": "ec2-task",
+  "memory": "128",
+  "taskRoleArn": null,
+  "compatibilities": [
+    "EXTERNAL",
+    "EC2"
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:710438132165:task-definition/DeployJavaSpringboot:1",
+  "family": "DeployJavaSpringboot",
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    }
+  ],
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
   ],
-  "networkMode": "bridge",
-  "cpu": "450"
+  "networkMode": null,
+  "runtimePlatform": null,
+  "cpu": "1024",
+  "revision": 1,
+  "status": "ACTIVE",
+  "inferenceAccelerators": null,
+  "proxyConfiguration": null,
+  "volumes": []
 }

@@ -9,3 +9,18 @@
 2022-09-05 07:45:47.961  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s177ms).
 2022-09-05 07:52:19.448  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m31s494ms).
 2022-09-05 08:07:49.521  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s849ms), soft-evicting connections from pool.
+2022-09-05 09:44:50.135  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m59s331ms).
+2022-09-05 10:45:52.928  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m30s721ms).
+2022-09-05 10:55:04.324  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m40s836ms).
+2022-09-05 11:00:00.039  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m25s636ms).
+2022-09-05 11:38:56.804  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m26s426ms).
+2022-09-05 12:12:35.800  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m37s548ms).
+2022-09-05 12:56:09.665  INFO 71160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-05 12:56:09.870  INFO 71160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-05 12:56:10.158  INFO 71160 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-05 12:56:11.372  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-05 12:56:11.372  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to view student_course_view
+2022-09-05 12:56:11.696  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-05 12:56:11.697  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-05 12:56:12.742  INFO 71160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-05 12:56:15.121  INFO 71160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
