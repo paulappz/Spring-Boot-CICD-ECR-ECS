@@ -8,5 +8,5 @@ VOLUME /tmp
 # ENV AWS_ACCESS_KEY=$ACCESS_ARG
 # ENV AWS_SECRET_KEY=$SECRET_ARG
 ARG JAR_FILE=target/*.jar
-COPY --from=build  ${JAR_FILE} app.jar
+COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
