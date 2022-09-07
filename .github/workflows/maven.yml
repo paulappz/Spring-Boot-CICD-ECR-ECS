@@ -20,5 +20,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    
+    - name: Run Test with Maven
+      run: mvn test
     - name: Build with Maven
       run: mvn -B package -Pprod --file pom.xml

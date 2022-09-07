@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.best.spring.service.StudentServiceTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.059 s - in com.best.spring.service.StudentServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.773 s - in com.best.spring.service.StudentServiceTest

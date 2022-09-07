@@ -1,26 +1,242 @@
-2022-09-05 01:26:06.183  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h44m37s257ms).
-2022-09-05 03:20:06.654  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h54m546ms).
-2022-09-05 03:23:58.406  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s707ms).
-2022-09-05 04:22:40.290  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m41s867ms).
-2022-09-05 06:23:38.187  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h27s110ms).
-2022-09-05 06:33:54.525  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m17s112ms).
-2022-09-05 06:49:54.890  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s769ms).
-2022-09-05 07:29:53.773  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m58s893ms).
-2022-09-05 07:45:47.961  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s177ms).
-2022-09-05 07:52:19.448  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m31s494ms).
-2022-09-05 08:07:49.521  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s849ms), soft-evicting connections from pool.
-2022-09-05 09:44:50.135  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m59s331ms).
-2022-09-05 10:45:52.928  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m30s721ms).
-2022-09-05 10:55:04.324  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m40s836ms).
-2022-09-05 11:00:00.039  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m25s636ms).
-2022-09-05 11:38:56.804  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m26s426ms).
-2022-09-05 12:12:35.800  WARN 71160 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m37s548ms).
-2022-09-05 12:56:09.665  INFO 71160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-09-05 12:56:09.870  INFO 71160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-05 12:56:10.158  INFO 71160 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2022-09-05 12:56:11.372  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
-2022-09-05 12:56:11.372  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to view student_course_view
-2022-09-05 12:56:11.696  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
-2022-09-05 12:56:11.697  WARN 71160 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
-2022-09-05 12:56:12.742  INFO 71160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-09-05 12:56:15.121  INFO 71160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-06 22:15:11.655  INFO 65019 --- [restartedMain] com.best.spring.BestSpringApplication    : Starting BestSpringApplication on Maons-MacBook-Pro.local with PID 65019 (/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes started by maontech in /Users/maontech/Documents/QS/spring-boot-best-practices)
+2022-09-06 22:15:11.688  INFO 65019 --- [restartedMain] com.best.spring.BestSpringApplication    : The following profiles are active: dev
+2022-09-06 22:15:11.922  INFO 65019 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2022-09-06 22:15:11.922  INFO 65019 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-06 22:15:11.923  INFO 65019 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-06 22:15:14.212  INFO 65019 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-06 22:15:14.372  INFO 65019 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140ms. Found 3 JPA repository interfaces.
+2022-09-06 22:15:15.344  INFO 65019 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 22:15:16.916  INFO 65019 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-09-06 22:15:16.941  INFO 65019 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 22:15:16.942  INFO 65019 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-09-06 22:15:17.174  INFO 65019 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 22:15:17.174  INFO 65019 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5251 ms
+2022-09-06 22:15:17.303 DEBUG 65019 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2022-09-06 22:15:17.722  INFO 65019 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-06 22:15:17.912  INFO 65019 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2022-09-06 22:15:18.218  INFO 65019 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-06 22:15:18.420  INFO 65019 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-06 22:15:20.656  INFO 65019 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-06 22:15:20.695  INFO 65019 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-09-06 22:16:00.969  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:00.975  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "student" does not exist, skipping
+2022-09-06 22:16:01.207  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:01.207  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "course" does not exist, skipping
+2022-09-06 22:16:02.200  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:02.200  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2022-09-06 22:16:02.340  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:02.341  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:16:02.576  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:02.577  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+2022-09-06 22:16:03.648  INFO 65019 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-06 22:16:03.662  INFO 65019 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:16:03.748  INFO 65019 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 22:16:09.058  WARN 65019 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'courseController' defined in file [/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes/com/best/spring/controller/CourseController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'courseServiceImpl' defined in file [/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes/com/best/spring/service/impl/CourseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.best.spring.mapper.CourseMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-09-06 22:16:09.073  INFO 65019 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:16:09.074  INFO 65019 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-06 22:16:09.609  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:09.614  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to view student_course_view
+2022-09-06 22:16:09.932  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:16:09.933  WARN 65019 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:16:10.284  INFO 65019 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 22:16:13.064  INFO 65019 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-06 22:16:13.082  INFO 65019 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-06 22:16:13.130  INFO 65019 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-06 22:16:13.878 ERROR 65019 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.best.spring.service.impl.CourseServiceImpl required a bean of type 'com.best.spring.mapper.CourseMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.best.spring.mapper.CourseMapper' in your configuration.
+
+2022-09-06 22:19:04.143  INFO 66091 --- [restartedMain] com.best.spring.BestSpringApplication    : Starting BestSpringApplication on Maons-MacBook-Pro.local with PID 66091 (/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes started by maontech in /Users/maontech/Documents/QS/spring-boot-best-practices)
+2022-09-06 22:19:04.148  INFO 66091 --- [restartedMain] com.best.spring.BestSpringApplication    : The following profiles are active: dev
+2022-09-06 22:19:04.251  INFO 66091 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2022-09-06 22:19:04.252  INFO 66091 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-06 22:19:04.254  INFO 66091 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-06 22:19:06.365  INFO 66091 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-06 22:19:06.554  INFO 66091 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164ms. Found 3 JPA repository interfaces.
+2022-09-06 22:19:07.562  INFO 66091 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 22:19:08.656  INFO 66091 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-09-06 22:19:08.680  INFO 66091 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 22:19:08.681  INFO 66091 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-09-06 22:19:08.924  INFO 66091 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 22:19:08.925  INFO 66091 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4670 ms
+2022-09-06 22:19:09.062 DEBUG 66091 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2022-09-06 22:19:09.364  INFO 66091 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-06 22:19:09.510  INFO 66091 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2022-09-06 22:19:09.787  INFO 66091 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-06 22:19:10.000  INFO 66091 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-06 22:19:12.350  INFO 66091 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-06 22:19:12.393  INFO 66091 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-09-06 22:19:48.140  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:48.141  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "student" does not exist, skipping
+2022-09-06 22:19:48.455  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:48.455  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "course" does not exist, skipping
+2022-09-06 22:19:48.613  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:48.614  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2022-09-06 22:19:48.774  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:48.775  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:19:49.106  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:49.106  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+2022-09-06 22:19:50.402  INFO 66091 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-06 22:19:50.415  INFO 66091 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:19:50.449  INFO 66091 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 22:19:52.645  WARN 66091 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'courseController' defined in file [/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes/com/best/spring/controller/CourseController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'courseServiceImpl' defined in file [/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes/com/best/spring/service/impl/CourseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.best.spring.mapper.CourseMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-09-06 22:19:52.646  INFO 66091 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:19:52.647  INFO 66091 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-06 22:19:53.379  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:53.380  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to view student_course_view
+2022-09-06 22:19:53.748  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:19:53.748  WARN 66091 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:19:53.903  INFO 66091 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 22:20:03.909  INFO 66091 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-06 22:20:03.913  INFO 66091 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-06 22:20:03.937  INFO 66091 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-06 22:20:04.192 ERROR 66091 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.best.spring.service.impl.CourseServiceImpl required a bean of type 'com.best.spring.mapper.CourseMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.best.spring.mapper.CourseMapper' in your configuration.
+
+2022-09-06 22:25:26.755  INFO 66769 --- [restartedMain] com.best.spring.BestSpringApplication    : Starting BestSpringApplication on Maons-MacBook-Pro.local with PID 66769 (/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes started by maontech in /Users/maontech/Documents/QS/spring-boot-best-practices)
+2022-09-06 22:25:26.775  INFO 66769 --- [restartedMain] com.best.spring.BestSpringApplication    : The following profiles are active: dev
+2022-09-06 22:25:26.873  INFO 66769 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2022-09-06 22:25:26.874  INFO 66769 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-06 22:25:26.874  INFO 66769 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-06 22:25:28.635  INFO 66769 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-06 22:25:28.850  INFO 66769 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199ms. Found 3 JPA repository interfaces.
+2022-09-06 22:25:29.718  INFO 66769 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 22:25:31.065  INFO 66769 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-09-06 22:25:31.122  INFO 66769 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 22:25:31.124  INFO 66769 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-09-06 22:25:31.354  INFO 66769 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 22:25:31.355  INFO 66769 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4481 ms
+2022-09-06 22:25:31.573 DEBUG 66769 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2022-09-06 22:25:31.992  INFO 66769 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-06 22:25:32.206  INFO 66769 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2022-09-06 22:25:32.527  INFO 66769 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-06 22:25:32.745  INFO 66769 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-06 22:25:35.027  INFO 66769 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-06 22:25:35.101  INFO 66769 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-09-06 22:26:07.767  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:07.769  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "student" does not exist, skipping
+2022-09-06 22:26:07.931  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:07.932  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "course" does not exist, skipping
+2022-09-06 22:26:08.087  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:08.088  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2022-09-06 22:26:08.263  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:08.263  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:26:08.418  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:08.418  WARN 66769 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+2022-09-06 22:26:09.496  INFO 66769 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-06 22:26:09.522  INFO 66769 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:26:09.574  INFO 66769 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 22:26:13.220  WARN 66769 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-06 22:26:13.767  INFO 66769 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-06 22:26:14.137  INFO 66769 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 22:26:14.825  INFO 66769 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-06 22:26:14.894  INFO 66769 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-06 22:26:15.037  INFO 66769 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 22:26:15.397  INFO 66769 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCoursesUsingGET_1
+2022-09-06 22:26:15.613  INFO 66769 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-09-06 22:26:15.625  INFO 66769 --- [restartedMain] com.best.spring.BestSpringApplication    : Started BestSpringApplication in 49.746 seconds (JVM running for 50.804)
+2022-09-06 22:26:24.836  INFO 66769 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 22:26:24.855  INFO 66769 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 22:26:24.877  INFO 66769 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2022-09-06 22:26:24.913 DEBUG 66769 --- [http-nio-9090-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /]
+2022-09-06 22:26:24.942 DEBUG 66769 --- [http-nio-9090-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /]
+2022-09-06 22:26:26.460 DEBUG 66769 --- [http-nio-9090-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /favicon.ico]
+2022-09-06 22:26:26.464 DEBUG 66769 --- [http-nio-9090-exec-2] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /favicon.ico]
+2022-09-06 22:26:29.740 DEBUG 66769 --- [http-nio-9090-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /ping]
+2022-09-06 22:26:29.809  INFO 66769 --- [http-nio-9090-exec-3] com.best.spring.aspect.LoggingAspect     : Enter: com.best.spring.controller.PingController.getAllCourses() with argument[s] = []
+2022-09-06 22:26:29.810  INFO 66769 --- [http-nio-9090-exec-3] com.best.spring.aspect.LoggingAspect     : Enter: com.best.spring.controller.PingController.getAllCourses() with argument[s] = []
+2022-09-06 22:26:29.897 DEBUG 66769 --- [http-nio-9090-exec-3] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /ping]
+2022-09-06 22:26:43.280  INFO 66769 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 22:26:43.294  INFO 66769 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:26:43.315  INFO 66769 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-06 22:26:44.025  WARN 66769 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:44.026  WARN 66769 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to view student_course_view
+2022-09-06 22:26:44.483  WARN 66769 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:26:44.483  WARN 66769 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:26:44.675  INFO 66769 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 22:26:46.319  INFO 66769 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-06 22:27:21.001  INFO 66981 --- [restartedMain] com.best.spring.BestSpringApplication    : Starting BestSpringApplication on Maons-MacBook-Pro.local with PID 66981 (/Users/maontech/Documents/QS/spring-boot-best-practices/target/classes started by maontech in /Users/maontech/Documents/QS/spring-boot-best-practices)
+2022-09-06 22:27:21.005  INFO 66981 --- [restartedMain] com.best.spring.BestSpringApplication    : The following profiles are active: dev
+2022-09-06 22:27:21.390  INFO 66981 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/maontech/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2022-09-06 22:27:21.399  INFO 66981 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-06 22:27:21.408  INFO 66981 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-06 22:27:23.607  INFO 66981 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-06 22:27:23.809  INFO 66981 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127ms. Found 3 JPA repository interfaces.
+2022-09-06 22:27:24.909  INFO 66981 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 22:27:26.145  INFO 66981 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-09-06 22:27:26.188  INFO 66981 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 22:27:26.189  INFO 66981 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-09-06 22:27:26.428  INFO 66981 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 22:27:26.438  INFO 66981 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5029 ms
+2022-09-06 22:27:26.578 DEBUG 66981 --- [restartedMain] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2022-09-06 22:27:27.070  INFO 66981 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-06 22:27:27.284  INFO 66981 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2022-09-06 22:27:27.655  INFO 66981 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-06 22:27:27.979  INFO 66981 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-06 22:27:30.616  INFO 66981 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-06 22:27:30.647  INFO 66981 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-09-06 22:28:02.896  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:02.898  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "student" does not exist, skipping
+2022-09-06 22:28:03.084  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:03.084  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "course" does not exist, skipping
+2022-09-06 22:28:03.230  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:03.230  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student" does not exist, skipping
+2022-09-06 22:28:03.395  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:03.395  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:28:03.553  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:03.553  WARN 66981 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+2022-09-06 22:28:04.708  INFO 66981 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-06 22:28:04.721  INFO 66981 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:28:04.758  INFO 66981 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 22:28:08.474  WARN 66981 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-06 22:28:09.237  INFO 66981 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-06 22:28:09.744  INFO 66981 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 22:28:10.675  INFO 66981 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-06 22:28:10.722  INFO 66981 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-06 22:28:10.912  INFO 66981 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 22:28:11.423  INFO 66981 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCoursesUsingGET_1
+2022-09-06 22:28:11.513  INFO 66981 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-09-06 22:28:11.521  INFO 66981 --- [restartedMain] com.best.spring.BestSpringApplication    : Started BestSpringApplication in 51.752 seconds (JVM running for 53.098)
+2022-09-06 22:28:31.844  INFO 66981 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 22:28:31.845  INFO 66981 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 22:28:31.860  INFO 66981 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2022-09-06 22:28:31.883 DEBUG 66981 --- [http-nio-9090-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : Before request [GET /ping]
+2022-09-06 22:28:31.916  INFO 66981 --- [http-nio-9090-exec-1] com.best.spring.aspect.LoggingAspect     : Enter: com.best.spring.controller.PingController.getAllCourses() with argument[s] = []
+2022-09-06 22:28:31.916  INFO 66981 --- [http-nio-9090-exec-1] com.best.spring.aspect.LoggingAspect     : Enter: com.best.spring.controller.PingController.getAllCourses() with argument[s] = []
+2022-09-06 22:28:31.988 DEBUG 66981 --- [http-nio-9090-exec-1] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : GET /ping]
+2022-09-06 22:28:50.198  INFO 66981 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 22:28:50.208  INFO 66981 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-06 22:28:50.212  INFO 66981 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-09-06 22:28:50.691  WARN 66981 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:50.692  WARN 66981 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : drop cascades to view student_course_view
+2022-09-06 22:28:51.040  WARN 66981 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-09-06 22:28:51.041  WARN 66981 --- [SpringContextShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "student_course_view" does not exist, skipping
+2022-09-06 22:28:51.197  INFO 66981 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-06 22:28:52.842  INFO 66981 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
